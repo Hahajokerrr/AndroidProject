@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_column="2"
+    android:backgroundTint="#3F51B5"
+    android:orientation="vertical"
+    android:paddingRight="3dp"
+    android:shrinkColumns="0"
+    android:stretchColumns="1"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TableRow
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="#3F51B5"
+        android:backgroundTint="#2196F3">
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="195dp"
+            android:layout_height="43dp"
+            android:autoText="false"
+            android:text="Welcome Homer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="71dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please give generously"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="117dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="198dp">
+
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="93dp"
+            android:layout_height="48dp"
+            android:text="Paypal"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="150dp" />
+
+        <AbsoluteLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <NumberPicker
+                android:layout_width="98dp"
+                android:layout_height="match_parent"
+                android:layout_x="50px"
+                android:orientation="vertical"></NumberPicker>
+        </AbsoluteLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="93dp"
+            android:layout_height="48dp"
+            android:text="Direct"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="150dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="354dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="12dp"
+            android:text="Amount"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="388dp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_column="1"
+            android:layout_gravity="left"
+            android:ems="10"
+            android:hint="Enter your donation"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="374dp" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_marginLeft="12dp"
+            android:backgroundTint="#F3E6E6"
+            android:text="Donate"
+            android:textColor="#090808"
+            android:textColorHighlight="#EFE2E2"
+            android:textColorHint="#977979"
+            android:textColorLink="#F1E6E6"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="465dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:text="Total so Far   $1998"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="482dp" />
+
+    </TableRow>
+
+</TableLayout>
