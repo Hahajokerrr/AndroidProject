@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothActivity">
+
+    <Button
+        android:id="@+id/enableBluetoothButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn on Bluetooth" />
+
+    <Button
+        android:id="@+id/disableBluetoothButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn off Bluetooth"
+        android:layout_below="@+id/enableBluetoothButton"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
